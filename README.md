@@ -1,2 +1,2 @@
 # PortfolioNew
-PortfolioNew 2021/6/13   now is not resposive
+PortfolioNew 2021/6/13   now is not responsive
