@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*home */
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+/*nav*/
+.nav {
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  li {
+    cursor: pointer;
+    list-style: none;
+    float: left;
+    margin: 0 10px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 120px;
+    border: solid 1px #000;
+    color: #000;
+    font-size: 24px;
+    font-family: "Source Code Pro", monospace;
+  }
+  /*hover*/
+  li:hover {
+    border: none;
+    color: #000;
+    background-color: #fff;
+  }
+}
+/*container*/
+.container {
+  width: 400vw;
+  height: 100%;
+
+  /*End nav*/
+  .home {
+    float: left;
+    width: 25%;
+    height: 100%;
+    /*left*/
+    .left {
+      float: left;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.61);
+
+      /*name*/
+      .name {
+        padding: 10px 20px 10px 20px;
+        background-color: #000;
+        color: #fff;
+        margin: 0px 0px 10px 0px;
+        border-radius: 120px;
+
+        h1 {
+          position: relative;
+          font-family: "Source Code Pro", monospace;
+        }
+        h1::before,
+        h1::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+        h1::before {
+          background-color: #000;
+          animation: textwriter 6s steps(26) infinite forwards;
+        }
+        @keyframes textwriter {
+          100% {
+            left: 100%;
+          }
+        }
+        h1::after {
+          background: #fff;
+          width: 0.125em;
+          animation: textwriter 6s steps(26) infinite forwards,
+            writer 1s steps(26) infinite;
+        }
+        @keyframes writer {
+          100% {
+            background-color: transparent;
+          }
+        }
+      }
+      /*End name */
+      /*job*/
+      .job {
+        padding: 10px 20px 10px 20px;
+        background-color: #fff;
+        color: #000;
+        border-radius: 120px;
+        h1 {
+          position: relative;
+          font-family: "Source Code Pro", monospace;
+        }
+        h1::before,
+        h1::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+        h1::before {
+          background-color: #fff;
+          animation: textwriter 6s steps(26) infinite forwards;
+        }
+        @keyframes textwriter {
+          100% {
+            left: 100%;
+          }
+        }
+        h1::after {
+          background: #000;
+          width: 0.125em;
+          animation: textwriter 6s steps(26) infinite forwards,
+            writer 1s steps(26) infinite;
+        }
+        @keyframes writer {
+          100% {
+            background-color: transparent;
+          }
+        }
+      }
+      /*end job*/
+    }
+    /*ENd left*/
+    /*right */
+    .right {
+      float: right;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.51);
+      /*image*/
+      .image {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 1px #000 solid;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+      /*ENd image*/
+    }
+    /*end right*/
+  }
+  /*ENd Home*/
+  /*skills */
+  .skills {
+    float: left;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.356);
+    span {
+      margin-right: 80px;
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+      background-color: #fff;
+      display: flex;
+      box-shadow: 12px 20px 20px 4px rgba(0, 0, 0, 0.493),
+        -15px -9px 20px 4px rgba(0, 0, 0, 0.575);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    span:hover {
+      padding: 10px;
+      cursor: pointer;
+      background-color: #000;
+
+      color: #fff;
+    }
+    .fa-html5 {
+      color: red;
+    }
+    .fa-css3 {
+      color: #167dbe;
+    }
+    .fa-sass {
+      color: #ce679a;
+    }
+    .fa-js {
+      color: yellow;
+    }
+    .fa-vuejs {
+      color: #68b281;
+    }
+  }
+  /*End skills*/
+  /*about*/
+  .about {
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.232);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      background: #000;
+      color: #fff;
+      margin: 0 0 10px 0;
+      padding: 10px 20px 10px 20px;
+      border-radius: 120px;
+    }
+  }
+  /*End about*/
+  /*contact*/
+  .contact {
+    background: rgba(0, 0, 0, 0.132);
+    float: left;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    a {
+      width: 200px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #fff;
+    }
+    a:nth-child(1) {
+      background: #fff;
+      color: blue;
+    }
+    a:nth-child(1):hover {
+      background: blue;
+      color: #fff;
+    }
+    a:nth-child(2) {
+      color: red;
+      background: #fff;
+    }
+    a:nth-child(2):hover {
+      background: red;
+      color: #fff;
+    }
+    a:nth-child(3) {
+      color: #000;
+      background: #fff;
+    }
+    a:nth-child(3):hover {
+      background: #000;
+      color: #fff;
+    }
+  }
+  /**end contact*/
+}
+/*ENd container*/
+::-webkit-scrollbar {
+  color: #fff;
+  background-color: #000;
+}
+::-webkit-scrollbar-thumb {
+  color: #fff;
+  background-color: #fff;
+  border-radius: 120px;
+}

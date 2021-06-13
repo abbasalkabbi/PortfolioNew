@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*home */
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+/*nav*/
+.nav {
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*hover*/
+}
+
+.nav li {
+  cursor: pointer;
+  list-style: none;
+  float: left;
+  margin: 0 10px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 120px;
+  border: solid 1px #000;
+  color: #000;
+  font-size: 24px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.nav li:hover {
+  border: none;
+  color: #000;
+  background-color: #fff;
+}
+
+/*container*/
+.container {
+  width: 400vw;
+  height: 100%;
+  /*End nav*/
+  /*ENd Home*/
+  /*skills */
+  /*End skills*/
+  /*about*/
+  /*End about*/
+  /*contact*/
+  /**end contact*/
+}
+
+.container .home {
+  float: left;
+  width: 25%;
+  height: 100%;
+  /*left*/
+  /*ENd left*/
+  /*right */
+  /*end right*/
+}
+
+.container .home .left {
+  float: left;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.61);
+  /*name*/
+  /*End name */
+  /*job*/
+  /*end job*/
+}
+
+.container .home .left .name {
+  padding: 10px 20px 10px 20px;
+  background-color: #000;
+  color: #fff;
+  margin: 0px 0px 10px 0px;
+  border-radius: 120px;
+}
+
+.container .home .left .name h1 {
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+}
+
+.container .home .left .name h1::before,
+.container .home .left .name h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.container .home .left .name h1::before {
+  background-color: #000;
+  -webkit-animation: textwriter 6s steps(26) infinite forwards;
+          animation: textwriter 6s steps(26) infinite forwards;
+}
+
+@-webkit-keyframes textwriter {
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes textwriter {
+  100% {
+    left: 100%;
+  }
+}
+
+.container .home .left .name h1::after {
+  background: #fff;
+  width: 0.125em;
+  -webkit-animation: textwriter 6s steps(26) infinite forwards, writer 1s steps(26) infinite;
+          animation: textwriter 6s steps(26) infinite forwards, writer 1s steps(26) infinite;
+}
+
+@-webkit-keyframes writer {
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes writer {
+  100% {
+    background-color: transparent;
+  }
+}
+
+.container .home .left .job {
+  padding: 10px 20px 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 120px;
+}
+
+.container .home .left .job h1 {
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+}
+
+.container .home .left .job h1::before,
+.container .home .left .job h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.container .home .left .job h1::before {
+  background-color: #fff;
+  -webkit-animation: textwriter 6s steps(26) infinite forwards;
+          animation: textwriter 6s steps(26) infinite forwards;
+}
+
+@keyframes textwriter {
+  100% {
+    left: 100%;
+  }
+}
+
+.container .home .left .job h1::after {
+  background: #000;
+  width: 0.125em;
+  -webkit-animation: textwriter 6s steps(26) infinite forwards, writer 1s steps(26) infinite;
+          animation: textwriter 6s steps(26) infinite forwards, writer 1s steps(26) infinite;
+}
+
+@keyframes writer {
+  100% {
+    background-color: transparent;
+  }
+}
+
+.container .home .right {
+  float: right;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.51);
+  /*image*/
+  /*ENd image*/
+}
+
+.container .home .right .image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px #000 solid;
+}
+
+.container .home .right .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.container .skills {
+  float: left;
+  width: 25%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.356);
+}
+
+.container .skills span {
+  margin-right: 80px;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 12px 20px 20px 4px rgba(0, 0, 0, 0.493), -15px -9px 20px 4px rgba(0, 0, 0, 0.575);
+          box-shadow: 12px 20px 20px 4px rgba(0, 0, 0, 0.493), -15px -9px 20px 4px rgba(0, 0, 0, 0.575);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .skills span:hover {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+.container .skills .fa-html5 {
+  color: red;
+}
+
+.container .skills .fa-css3 {
+  color: #167dbe;
+}
+
+.container .skills .fa-sass {
+  color: #ce679a;
+}
+
+.container .skills .fa-js {
+  color: yellow;
+}
+
+.container .skills .fa-vuejs {
+  color: #68b281;
+}
+
+.container .about {
+  float: left;
+  width: 25%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.232);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .about h1 {
+  background: #000;
+  color: #fff;
+  margin: 0 0 10px 0;
+  padding: 10px 20px 10px 20px;
+  border-radius: 120px;
+}
+
+.container .contact {
+  background: rgba(0, 0, 0, 0.132);
+  float: left;
+  width: 25%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .contact a {
+  width: 200px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.container .contact a:nth-child(1) {
+  background: #fff;
+  color: blue;
+}
+
+.container .contact a:nth-child(1):hover {
+  background: blue;
+  color: #fff;
+}
+
+.container .contact a:nth-child(2) {
+  color: red;
+  background: #fff;
+}
+
+.container .contact a:nth-child(2):hover {
+  background: red;
+  color: #fff;
+}
+
+.container .contact a:nth-child(3) {
+  color: #000;
+  background: #fff;
+}
+
+.container .contact a:nth-child(3):hover {
+  background: #000;
+  color: #fff;
+}
+
+/*ENd container*/
+::-webkit-scrollbar {
+  color: #fff;
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  color: #fff;
+  background-color: #fff;
+  border-radius: 120px;
+}
+/*# sourceMappingURL=core.css.map */
