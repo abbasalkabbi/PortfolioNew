@@ -13,11 +13,18 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-y: hidden;
+  /*menu for moblie */
+  menu {
+    display: none;
+  }
+  .menu-nav {
+    display: none;
+  }
 }
 /*nav*/
 .nav {
   width: 100%;
-  height: 10%;
+  height: 80px;
   position: fixed;
   display: flex;
   align-items: center;
@@ -45,9 +52,7 @@ body {
 /*container*/
 .container {
   width: 400vw;
-  height: 100%;
-
-  /*End nav*/
+  height: 100%; /*End nav*/
   .home {
     float: left;
     width: 25%;
@@ -186,14 +191,15 @@ body {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.356);
     span {
-      margin-right: 80px;
+      float: left;
+      margin: 20px;
       width: 200px;
       height: 200px;
       border-radius: 20px;
       background-color: #fff;
       display: flex;
-      box-shadow: 12px 20px 20px 4px rgba(0, 0, 0, 0.493),
-        -15px -9px 20px 4px rgba(0, 0, 0, 0.575);
+      box-shadow: 7px 4px 20px 4px rgba(0, 0, 0, 0.293),
+        -6px -2px 20px 4px rgba(0, 0, 0, 0.375);
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -201,9 +207,6 @@ body {
     span:hover {
       padding: 10px;
       cursor: pointer;
-      background-color: #000;
-
-      color: #fff;
     }
     .fa-html5 {
       color: red;
@@ -297,3 +300,145 @@ body {
   background-color: #fff;
   border-radius: 120px;
 }
+
+@media screen and (max-width: 900px) {
+  /*moblie*/
+  body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /*button*/
+    menu {
+      display: block;
+      position: fixed;
+      top: 30px;
+      right: 30px;
+
+      .fa-bars {
+        color: #000;
+      }
+    }
+    /*nav for moblie just*/
+    .menu-nav {
+      display: none;
+      width: 100%;
+      height: 100vh;
+
+      background-color: rgba(41, 40, 40, 1);
+      position: fixed;
+      z-index: 99;
+      align-items: center;
+      justify-content: center;
+      .fa-times {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: #fff;
+      }
+      ul {
+        list-style: none;
+        a {
+          text-decoration: none;
+          background-color: #000;
+          color: #fff;
+          font-size: 20px;
+          width: 200px;
+          height: 40px;
+          margin: 10px auto;
+          border: 1px solid #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    /*body*/
+    .nav {
+      display: none;
+    }
+    /*container*/
+    .container {
+      width: 100vw;
+      /*home*/
+      .home {
+        width: 100%;
+        float: auto;
+        /*left*/
+        .left {
+          width: 100%;
+          float: auto;
+          height: 50%;
+          /*name*/
+          .name {
+            font-size: 10px;
+            padding: 15px;
+            margin: 0px 0px 10px 0px;
+            border-radius: 0;
+          }
+          /*job*/
+          .job {
+            font-size: 10px;
+            padding: 15px;
+            margin: 0px 0px 10px 0px;
+            border-radius: 0;
+          }
+        }
+        /*right*/
+        .right {
+          width: 100%;
+          float: auto;
+          height: 50%;
+        }
+      } /*end home*/
+      /*skills*/
+      .skills {
+        float: auto;
+        width: 100%;
+        height: fit-content;
+        .skill {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      } /*end skills*/
+      /*about*/
+      .about {
+        float: auto;
+        width: 100%;
+        h1 {
+          padding: 5px;
+          border-radius: 10px;
+          font-size: 25px;
+        }
+      }
+      /*end about*/
+      /*contact*/
+      .contact {
+        float: auto;
+        width: 100%;
+        a {
+          width: 300px;
+          height: 80px;
+          margin: 10px auto;
+          font-size: 40px;
+        }
+        a:nth-child(1) {
+          background: blue;
+          color: #fff;
+        }
+
+        a:nth-child(2) {
+          color: #fff;
+          background: red;
+        }
+
+        a:nth-child(3) {
+          color: #fff;
+          background: #000;
+        }
+      } /*End contact*/
+    } /*end container*/
+  } /*end body*/
+}
+/*end moblie*/

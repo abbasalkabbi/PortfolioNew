@@ -13,6 +13,16 @@
   </head>
   <body>
     <!---START DIV nav-->
+    <menu><i class="fas fa-bars fa-2x" onclick="menubutton()"></i></menu>
+    <div class="menu-nav">
+      <i class="fas fa-times fa-3x" onclick="menubutton()"></i>
+      <ul>
+        <a href="#home"><li>Home</li></a>
+        <a href="#skills"><li>Skills</li></a>
+        <a href="#about"><li>About</li></a>
+        <a href="#contact"><li>Contact</li></a>
+      </ul>
+    </div>
     <div class="nav">
       <ul>
         <a href="#home"><li>Home</li></a>
@@ -51,26 +61,39 @@
       <!---END DIV home-->
       <!----Start div skills-->
       <div class="skills" id="skills">
-        <span>
-          <h1>HTML</h1>
-          <i class="fab fa-html5 fa-8x"></i>
-        </span>
-        <span>
-          <h1>CSS</h1>
-          <i class="fab fa-css3 fa-8x"></i>
-        </span>
-        <span>
-          <h1>JS</h1>
-          <i class="fab fa-js fa-8x"></i>
-        </span>
-        <span>
-          <h1>SASS</h1>
-          <i class="fab fa-sass fa-8x"></i>
-        </span>
-        <span>
-          <h1>VUE JS</h1>
-          <i class="fab fa-vuejs fa-8x"></i>
-        </span>
+        <!----Start div skill-->
+        <div class="skill">
+          <span>
+            <h1>HTML</h1>
+            <i class="fab fa-html5 fa-8x"></i>
+          </span>
+          <span>
+            <h1>CSS</h1>
+            <i class="fab fa-css3 fa-8x"></i>
+          </span>
+          <span>
+            <h1>JS</h1>
+            <i class="fab fa-js fa-8x"></i>
+          </span>
+          <span>
+            <h1>JQuery</h1>
+            <img src="./image/skills/jquery.png" alt="" />
+          </span>
+          <span>
+            <h1>SASS</h1>
+            <i class="fab fa-sass fa-8x"></i>
+          </span>
+
+          <span>
+            <h1>VUE JS</h1>
+            <i class="fab fa-vuejs fa-8x"></i>
+          </span>
+          <span>
+            <h1>Nuxt JS</h1>
+            <img src="./image/skills/nuxtjs-icon.svg" alt="" />
+          </span>
+        </div>
+        <!----End div skill-->
       </div>
       <!----End div skills-->
       <!---STart About -->
@@ -79,16 +102,28 @@
         <h1>Age is 18 years old</h1>
         <h1>I'm From Iraq</h1>
         <h1>My Degree is High School</h1>
-        <a href=""><h1>you can see my projects</h1></a>
+        <a href="https://github.com/abbasalkabbi" target="blank"
+          ><h1>you can see my projects</h1></a
+        >
       </div>
       <!---ENd about-->
       <!--start contact-->
       <div class="contact" id="contact">
-        <a href="">Facebook<i class="fab fa-facebook"></i></a>
-        <a href="">Youtube<i class="fab fa-youtube"></i></a>
-        <a href="">Github<i class="fab fa-github"></i></a>
+        <a href="https://www.facebook.com/abbasalkaabi2003" target="blank"
+          >Facebook<i class="fab fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCC_Adr2qlJWSiS-Ef3XOwbA"
+          target="blank"
+          >Youtube<i class="fab fa-youtube"></i
+        ></a>
+        <a href="https://github.com/abbasalkabbi" target="blank"
+          >Github<i class="fab fa-github"></i
+        ></a>
       </div>
       <!---ENd contact-->
     </div>
+    <!---Js-->
+    <script src="./app.js"></script>
   </body>
 </html>
