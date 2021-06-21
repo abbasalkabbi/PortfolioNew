@@ -194,8 +194,8 @@ body .menu-nav {
 
 .container .home .left .job h1::before {
   background-color: #fff;
-  -webkit-animation: textwriter 6s steps(26) infinite forwards;
-          animation: textwriter 6s steps(26) infinite forwards;
+  -webkit-animation: textwriter 10s steps(31) infinite forwards;
+          animation: textwriter 10s steps(31) infinite forwards;
 }
 
 @keyframes textwriter {
@@ -207,8 +207,8 @@ body .menu-nav {
 .container .home .left .job h1::after {
   background: #000;
   width: 0.125em;
-  -webkit-animation: textwriter 6s steps(26) infinite forwards, writer 1s steps(26) infinite;
-          animation: textwriter 6s steps(26) infinite forwards, writer 1s steps(26) infinite;
+  -webkit-animation: textwriter 10s steps(31) infinite forwards, writer 1s steps(26) infinite;
+          animation: textwriter 10s steps(31) infinite forwards, writer 1s steps(26) infinite;
 }
 
 @keyframes writer {
@@ -309,12 +309,26 @@ body .menu-nav {
   color: #ce679a;
 }
 
+.container .skills .fa-bootstrap {
+  color: #6f11ef;
+}
+
 .container .skills .fa-js {
   color: yellow;
 }
 
 .container .skills .fa-vuejs {
   color: #68b281;
+}
+
+.container .skills .fa-php {
+  color: #000;
+  background-color: #787cb4;
+  border-radius: 50%;
+}
+
+.container .skills #mysql img {
+  width: 100%;
 }
 
 .container .about {
