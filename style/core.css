@@ -327,6 +327,14 @@ body .menu-nav {
   border-radius: 50%;
 }
 
+.container .skills .fa-laravel {
+  color: #ff291a;
+}
+
+.container .skills .fa-wordpress {
+  color: #21759b;
+}
+
 .container .skills #mysql img {
   width: 100%;
 }
@@ -393,36 +401,43 @@ body .menu-nav {
           justify-content: center;
   text-decoration: none;
   color: #fff;
+  margin: 10px 0px;
 }
 
 .container .contact a:nth-child(1) {
-  background: #fff;
-  color: blue;
+  background: blue;
+  color: #FFF;
 }
 
 .container .contact a:nth-child(1):hover {
-  background: blue;
-  color: #fff;
+  background: #fff;
+  color: blue;
+  -webkit-box-shadow: -1px 1px 5px 6px blue;
+          box-shadow: -1px 1px 5px 6px blue;
 }
 
 .container .contact a:nth-child(2) {
-  color: red;
-  background: #fff;
-}
-
-.container .contact a:nth-child(2):hover {
   background: red;
   color: #fff;
 }
 
-.container .contact a:nth-child(3) {
-  color: #000;
+.container .contact a:nth-child(2):hover {
+  color: red;
   background: #fff;
+  -webkit-box-shadow: -1px 1px 5px 6px red;
+          box-shadow: -1px 1px 5px 6px red;
+}
+
+.container .contact a:nth-child(3) {
+  background: #000;
+  color: #fff;
 }
 
 .container .contact a:nth-child(3):hover {
-  background: #000;
-  color: #fff;
+  -webkit-box-shadow: -1px 1px 5px 6px #000;
+          box-shadow: -1px 1px 5px 6px #000;
+  background: #fff;
+  color: #000;
 }
 
 /*ENd container*/
@@ -437,7 +452,7 @@ body .menu-nav {
   border-radius: 120px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   /*moblie*/
   body {
     overflow-y: scroll;
@@ -546,6 +561,111 @@ body .menu-nav {
   body .container .skills {
     float: auto;
     width: 100%;
+    min-height: 100vh;
+  }
+  body .container .skills .skill {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .container .about {
+    float: auto;
+    width: 100%;
+  }
+  body .container .about h1 {
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 44px;
+  }
+  body .container .contact {
+    float: auto;
+    width: 100%;
+  }
+  body .container .contact a {
+    width: 300px;
+    height: 80px;
+    margin: 10px auto;
+    font-size: 40px;
+  }
+  body .container .contact a:nth-child(1) {
+    background: blue;
+    color: #fff;
+  }
+  body .container .contact a:nth-child(2) {
+    color: #fff;
+    background: red;
+  }
+  body .container .contact a:nth-child(3) {
+    color: #fff;
+    background: #000;
+  }
+  /*end body*/
+}
+
+/*end moblie*/
+@media screen and (max-width: 700px) {
+  /*moblie*/
+  body {
+    /*body*/
+    /*container*/
+    /*end container*/
+  }
+  body .container {
+    /*home*/
+    /*end home*/
+    /*skills*/
+    /*end skills*/
+    /*about*/
+    /*end about*/
+  }
+  body .container .home {
+    /*left*/
+    /*right*/
+  }
+  body .container .home .left {
+    width: 100%;
+    float: auto;
+    height: 50%;
+    /*name*/
+    /*job*/
+  }
+  body .container .home .left .name {
+    font-size: 10px;
+    padding: 15px;
+    margin: 0px 0px 10px 0px;
+    border-radius: 0;
+  }
+  body .container .home .left .job {
+    font-size: 8px;
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+    border-radius: 0;
+  }
+  body .container .home .right {
+    width: 100%;
+    float: auto;
+    height: 50%;
+    overflow: hidden;
+  }
+  body .container .home .right .image {
+    width: 100%;
+  }
+  body .container .skills {
+    float: auto;
+    width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -573,28 +693,6 @@ body .menu-nav {
     padding: 5px;
     border-radius: 10px;
     font-size: 25px;
-  }
-  body .container .contact {
-    float: auto;
-    width: 100%;
-  }
-  body .container .contact a {
-    width: 300px;
-    height: 80px;
-    margin: 10px auto;
-    font-size: 40px;
-  }
-  body .container .contact a:nth-child(1) {
-    background: blue;
-    color: #fff;
-  }
-  body .container .contact a:nth-child(2) {
-    color: #fff;
-    background: red;
-  }
-  body .container .contact a:nth-child(3) {
-    color: #fff;
-    background: #000;
   }
   /*end body*/
 }

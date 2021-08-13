@@ -237,11 +237,20 @@ body {
       color: #000;
       background-color: #787cb4;
       border-radius: 50%;
+      
     }
+    .fa-laravel {
+      color: #ff291a;
+      
+    }
+    .fa-wordpress{
+      color: #21759b;
+    }
+
     // mysql span
     #mysql {
       img {
-        width: 100%;
+      width: 100%;
       }
     }
   }
@@ -283,30 +292,34 @@ body {
       justify-content: center;
       text-decoration: none;
       color: #fff;
+      margin: 10px 0px;
     }
     a:nth-child(1) {
-      background: #fff;
-      color: blue;
+      background: blue;
+      color:#FFF;
     }
     a:nth-child(1):hover {
-      background: blue;
-      color: #fff;
+      background: #fff;
+      color: blue;
+      box-shadow: -1px 1px 5px 6px blue;
     }
     a:nth-child(2) {
-      color: red;
-      background: #fff;
-    }
-    a:nth-child(2):hover {
       background: red;
       color: #fff;
     }
-    a:nth-child(3) {
-      color: #000;
+    a:nth-child(2):hover {
+      color: red;
       background: #fff;
+      box-shadow: -1px 1px 5px 6px red;
     }
-    a:nth-child(3):hover {
+    a:nth-child(3) {
       background: #000;
       color: #fff;
+    }
+    a:nth-child(3):hover {
+      box-shadow: -1px 1px 5px 6px #000;
+      background: #fff;
+      color: #000;
     }
   }
   /**end contact*/
@@ -322,7 +335,7 @@ body {
   border-radius: 120px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   /*moblie*/
   body {
     overflow-y: scroll;
@@ -415,12 +428,15 @@ body {
       .skills {
         float: auto;
         width: 100%;
-        height: fit-content;
+        min-height: 100vh;
         .skill {
+          min-height: 100vh;
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           align-items: center;
           justify-content: center;
+          flex-wrap: wrap;
+
         }
       } /*end skills*/
       /*about*/
@@ -430,7 +446,7 @@ body {
         h1 {
           padding: 5px;
           border-radius: 10px;
-          font-size: 25px;
+          font-size: 44px;
         }
       }
       /*end about*/
@@ -459,6 +475,83 @@ body {
           background: #000;
         }
       } /*End contact*/
+    } /*end container*/
+  } /*end body*/
+}
+/*end moblie*/
+@media screen and (max-width: 700px) {
+  /*moblie*/
+  body {
+  
+  
+  
+  
+    /*body*/
+    
+    /*container*/
+    .container {
+      
+      /*home*/
+      .home {
+        
+        /*left*/
+        .left {
+          width: 100%;
+          float: auto;
+          height: 50%;
+          /*name*/
+          .name {
+            font-size: 10px;
+            padding: 15px;
+            margin: 0px 0px 10px 0px;
+            border-radius: 0;
+          }
+          /*job*/
+          .job {
+            font-size: 8px;
+            padding: 5px;
+            margin: 0px 0px 10px 0px;
+            border-radius: 0;
+          }
+        }
+        /*right*/
+        .right {
+          width: 100%;
+          float: auto;
+          height: 50%;
+          overflow: hidden;
+          .image{
+            width: 100%;
+          
+          }
+        }
+      } /*end home*/
+      /*skills*/
+      .skills {
+        float: auto;
+        width: 100%;
+        height: fit-content;
+        .skill {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      } /*end skills*/
+      /*about*/
+      .about {
+        float: auto;
+        width: 100%;
+        h1 {
+          padding: 5px;
+          border-radius: 10px;
+          font-size: 25px;
+        }
+      }
+      /*end about*/
+    
+    
+    
     } /*end container*/
   } /*end body*/
 }
