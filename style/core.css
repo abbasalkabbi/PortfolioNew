@@ -43,6 +43,12 @@ body .menu-nav {
   /*hover*/
 }
 
+.nav .active li {
+  border: none;
+  color: #000;
+  background-color: #fff;
+}
+
 .nav li {
   cursor: pointer;
   list-style: none;
@@ -50,7 +56,6 @@ body .menu-nav {
   margin: 0 10px;
   padding: 10px 20px 10px 20px;
   border-radius: 120px;
-  border: solid 1px #000;
   color: #000;
   font-size: 24px;
   font-family: "Source Code Pro", monospace;
@@ -297,6 +302,10 @@ body .menu-nav {
   cursor: pointer;
 }
 
+.container .skills i {
+  font-size: 8em;
+}
+
 .container .skills .fa-html5 {
   color: red;
 }
@@ -473,7 +482,6 @@ body .menu-nav {
     color: #000;
   }
   body .menu-nav {
-    display: none;
     width: 100%;
     height: 100vh;
     background-color: #292828;
@@ -561,10 +569,19 @@ body .menu-nav {
   body .container .skills {
     float: auto;
     width: 100%;
-    min-height: 100vh;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: auto;
   }
   body .container .skills .skill {
-    min-height: 100vh;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -580,6 +597,19 @@ body .menu-nav {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  body .container .skills .skill span {
+    width: 100px;
+    height: 100px;
+  }
+  body .container .skills .skill span h1 {
+    font-size: 12px;
+  }
+  body .container .skills .skill span i {
+    font-size: 5em;
+  }
+  body .container .skills .skill span img {
+    width: 80px;
   }
   body .container .about {
     float: auto;
@@ -669,21 +699,28 @@ body .menu-nav {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   body .container .skills .skill {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .container .skills .skill span img {
+    width: 80px;
   }
   body .container .about {
     float: auto;
